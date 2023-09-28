@@ -1,0 +1,7 @@
+Approach to smoothing?
+
+a median filter in front of a low pass removes "salt & pepper" noise
+
+a leaky integrator is a simple low pass
+
+avg += (new - avg) * K;   // k < 1
